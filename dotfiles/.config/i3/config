@@ -190,3 +190,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec_always feh --bg-fill $HOME/Documents/Code/chrono/chrono/dotfiles/wallpapers/14.png
