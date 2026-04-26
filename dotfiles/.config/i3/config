@@ -56,7 +56,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -68,7 +68,8 @@ bindsym $mod+Shift+n exec --no-startup-id ~/.config/redshift/toggle-redshift.sh
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus upbindsym $mod+semicolon focus right
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -191,4 +192,5 @@ bar {
         status_command i3status
 }
 
-exec_always feh --bg-fill $HOME/Documents/Code/chrono/chrono/dotfiles/wallpapers/14.png
+
+exec_always feh --bg-fill ~/.wallpaper
